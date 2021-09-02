@@ -1,8 +1,10 @@
+import 'package:bytebank_ii/api/webclient.dart';
 import 'package:bytebank_ii/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(ByteBankII());
+  findAll().then((transactions) => print(transactions));
 }
 
 class ByteBankII extends StatelessWidget {
